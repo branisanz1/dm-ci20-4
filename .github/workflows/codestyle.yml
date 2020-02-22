@@ -15,5 +15,14 @@ jobs:
           sudo chmod a+x php-cs-fixer
           sudo mv php-cs-fixer /usr/local/bin/php-cs-fixer
 
-      - name: launch validation
+      - name: Download security checker
+        run: |
+          curl -L https://get.sensiolabs.org/security-checker.phar -o security-checker 
+          sudo chmod a+x security-checker
+          sudo mv security-checker /usr/local/bin/security-checker
+
+      - name: launch php-cs-fixer
         run: php-cs-fixer fix --dry-run src
+
+      - name: launch security-checker
+        run: security-checker security:check composer.lock
