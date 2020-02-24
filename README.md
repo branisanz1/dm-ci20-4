@@ -21,6 +21,10 @@ A simple Symfony project connected to the [Star Wars API](https://swapi.co) to i
 - Clone the repository
 - Install dependencies: `make install`
 
+## Git WorkFlow
+
+![alt text](https://blog.engineering.publicissapient.fr/wp-content/uploads/2018/03/Image-3.png)
+
 ## Usage
 
 ```
