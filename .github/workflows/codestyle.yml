@@ -24,5 +24,11 @@ jobs:
       - name: launch php-cs-fixer
         run: php-cs-fixer fix --dry-run src
 
+      - name: Install composer
+        run: composer install
+
+      - name: Update composer
+        run: composer update
+
       - name: launch security-checker
         run: security-checker security:check composer.lock
