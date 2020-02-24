@@ -1,4 +1,4 @@
-# # DM Continuous Integration DEV 20.4
+## DM CI DEV 20.4
 
 A simple Symfony project connected to the [Star Wars API](https://swapi.co) to illustrate how to use tests.
 
