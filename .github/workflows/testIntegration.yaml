@@ -1,8 +1,8 @@
 name: Test integration
 on:
   schedule:
-    - cron: "0 0 * ? * *"
-    # '0 0 * ? * *' toutes les heures
+    - cron: "0 0 * * *"
+    # '0 0 * * *' toutes les jours a minuit
 
 jobs:
   testIntegration:
