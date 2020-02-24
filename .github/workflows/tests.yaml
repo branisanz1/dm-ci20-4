@@ -1,12 +1,14 @@
-name: Test unit, integration and functional
+name: Test unit and functional
 on: push
 
 jobs:
-  testUnit:
+  tests:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
       - name: Install composer
         run: composer install
-      - name: Launch test unit, integration and functional
-        run: make test
+      - name: Launch test unit
+        run: make test_unit
+      - name: Launch test functional
+        run: make test_functional
