@@ -5,7 +5,6 @@ A simple Symfony project connected to the [Star Wars API](https://swapi.co) to i
 ## Badges
 
 ![Code Style](https://github.com/branisanz1/dm-ci20-4/workflows/Code%20Style/badge.svg)
-![Test unit and functional](https://github.com/branisanz1/dm-ci20-4/workflows/Test%20unit%20and%20functional/badge.svg)
 ![Hadolint](https://github.com/branisanz1/dm-ci20-4/workflows/Hadolint/badge.svg)
 
 ## Requirements
