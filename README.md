@@ -12,9 +12,9 @@ A simple Symfony project connected to the [Star Wars API](https://swapi.co) to i
 
 - [x] Php 7.1 or +
 - [x] Make
-- [x] [Git](https://www.atlassian.com/fr/git/tutorials/install-git)
-- [x] [Docker](https://docs.docker.com/install/)
-- [x] [Docker Compose](https://docs.docker.com/compose/install/)
+- [x] Git
+- [x] Docker
+- [x] Docker Compose
 
 ## Installation
 
