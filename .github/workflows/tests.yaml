@@ -11,4 +11,4 @@ jobs:
       - name: Launch test unit
         run: make test_unit
       - name: Launch test functional
-        run: make test_functional
+        run: make test
