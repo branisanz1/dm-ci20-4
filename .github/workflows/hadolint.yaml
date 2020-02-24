@@ -2,11 +2,12 @@ name: Hadolint
 on: push
 
 jobs:
-  hadolint:
-    name: Hadolint
+  linter:
     runs-on: ubuntu-latest
-    container: docker://hadolint/hadolint:latest-debian
     steps:
-      - uses: actions/checkout@v2
-      - name: Launch Hadolint on the Dockerfile
-        run: hadolint Dockerfile
+      - name: Hadolint
+        uses: actions/checkout@v2
+      - name: install Docker
+        run: curl -sSL https://get.docker.com | sh
+      - name: run Hadolint
+        run: docker run --rm -i hadolint/hadolint < Dockerfile
