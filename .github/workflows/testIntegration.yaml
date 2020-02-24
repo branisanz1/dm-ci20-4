@@ -1,0 +1,15 @@
+name: Test integration
+on:
+  schedule:
+    - cron: "0 0 * ? * *"
+    # '0 0 * ? * *' toutes les heures
+
+jobs:
+  testIntegration:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Install composer
+        run: composer install
+      - name: Launch test integration
+        run: make test_integration
